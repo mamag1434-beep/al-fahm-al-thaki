@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الفهم الذكي | الثانوية الرابعة</title>
+<style>
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: Tahoma, Arial, sans-serif;
+background: #f2f8f8;
+color: #173e4b;
+line-height: 1.8;
+}
+header {
+background: linear-gradient(125deg,#176c72,#244e71);
+color: white;
+padding: 55px 20px;
+text-align: center;
+}
+header h1 { font-size: 46px; margin: 10px 0; }
+header p { margin: 5px; }
+main { max-width: 1050px; margin: auto; padding: 35px 20px; }
+.intro { text-align: center; margin-bottom: 30px; }
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+gap: 20px;
+}
+.card {
+background: white;
+border-radius: 18px;
+padding: 28px;
+border-top: 5px solid #d4a85d;
+box-shadow: 0 8px 24px #173e4b12;
+}
+.card h2 { margin-top: 0; }
+button {
+background: #176c72;
+color: white;
+border: 0;
+border-radius: 12px;
+padding: 12px 22px;
+font: inherit;
+cursor: pointer;
+}
+button:hover { background: #104f54; }
+.notice {
+background: #e2f0ef;
+padding: 20px;
+border-radius: 15px;
+margin-top: 30px;
+}
+footer { text-align: center; padding: 25px; }
+dialog {
+border: 0;
+border-radius: 18px;
+padding: 25px;
+max-width: 420px;
+}
+</style>
+</head>
+<body>
+<header>
+<p>الثانوية الرابعة</p>
+<h1>الفهم الذكي</h1>
+<p>منصة تعليمية تفاعلية لتنمية مهارات الفهم القرائي والقدرات اللفظية</p>
+<p>لطالبات الصفين الثاني والثالث الثانوي</p>
+</header>
+
+<main>
+<section class="intro">
+<h2>مرحبًا بكِ في رحلة التعلم</h2>
+<p>اقرئي بوعي، وفكري بعمق، وتقدمي بثقة نحو إتقان المهارات.</p>
+</section>
+
+<section class="cards">
+<article class="card">
+<h2>📖 الفهم القرائي</h2>
+<p>مهارات الفهم الحرفي والاستنتاجي والتقويمي والإبداعي.</p>
+<button onclick="showInfo('الفهم القرائي')">استكشفي المسار</button>
+</article>
+
+<article class="card">
+<h2>🧠 القدرات اللفظية</h2>
+<p>التناظر اللفظي وإكمال الجمل والخطأ السياقي والمفردة الشاذة واستيعاب المقروء.</p>
+<button onclick="showInfo('القدرات اللفظية')">استكشفي المسار</button>
+</article>
+
+<article class="card">
+<h2>📊 الاختبارات والتقدم</h2>
+<p>الاختبارات القبلية والبعدية والتغذية الراجعة وقياس أثر التعلم.</p>
+<button onclick="showInfo('الاختبارات والتقدم')">عرض التفاصيل</button>
+</article>
+</section>
+
+<div class="notice">
+هذه نسخة أولية للمنصة. سيتم إضافة الاختبارات وحسابات الطالبات وحفظ النتائج لاحقًا.
+</div>
+</main>
+
+<footer>الفهم الذكي | الثانوية الرابعة</footer>
+
+<dialog id="info">
+<h3 id="dialog-title"></h3>
+<p>سيتم إضافة محتوى هذا القسم وأنشطته في مرحلة التطوير القادمة.</p>
+<button onclick="document.getElementById('info').close()">إغلاق</button>
+</dialog>
+
+<script>
+function showInfo(title) {
+document.getElementById('dialog-title').textContent = title;
+document.getElementById('info').showModal();
+}
+</script>
+</body>
+</html>
