@@ -8,6 +8,17 @@
 
 <style>
 * { box-sizing: border-box; }
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const SUPABASE_URL = "https://eqrmdtpzfqipadwkggdw.supabase.co/rest/v1/";
+const SUPABASE_KEY = "sb_publishable_APohBpB_9t0qJ9Ci6vU5NA_l_CJAHGG";
+
+const supabaseClient = supabase.createClient(
+SUPABASE_URL,
+SUPABASE_KEY
+);
+</script>
 
 body {
 margin: 0
