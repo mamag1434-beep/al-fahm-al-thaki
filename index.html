@@ -98,6 +98,28 @@ max-width: 420px;
 <div class="notice">
 هذه نسخة أولية للمنصة. سيتم إضافة الاختبارات وحسابات الطالبات وحفظ النتائج لاحقًا.
 </div>
+<p>الفصل: 1/1</p>
+<p>اسم المستخدم: demo_student_001</p>
+
+<p>حالة الطلب:
+<strong id="demo-status">بانتظار الموافقة</strong>
+</p>
+
+<button type="button" onclick="document.getElementById('demo-status').textContent='تمت الموافقة تجريبيًا'">
+موافقة
+</button>
+
+<button type="button" onclick="document.getElementById('demo-status').textContent='مرفوض تجريبيًا'">
+رفض
+</button>
+
+</div>
+
+<p style="font-size:13px;">
+هذه الأزرار للعرض فقط، ولا تغيّر بيانات Supabase.
+</p>
+
+</section>
 </main>
 
 <footer>الفهم الذكي | الثانوية الرابعة</footer>
